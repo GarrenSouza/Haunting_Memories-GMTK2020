@@ -13,7 +13,9 @@ public class Player : MonoBehaviour
     private float _yVelocity;
     private float _tempoEsperado = 3.0f;
     private float _timer = 0; 
-    private CharacterController _controller; 
+    private CharacterController _controller;
+
+    public float _countSomething = 0;
 
 
     // Start is called before the first frame update
@@ -56,5 +58,12 @@ public class Player : MonoBehaviour
         // alteração no movimento do jogador :
         movement.y = _yVelocity;                    
         _controller.Move(movement * Time.deltaTime);        
-    }   
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Coletavel") {
+            _countSomething++;
+            Destroy(other.gameObject);
+        }
+    }
 }
