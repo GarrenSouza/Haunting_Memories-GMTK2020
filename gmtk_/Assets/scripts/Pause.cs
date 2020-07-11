@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour {
 
@@ -24,15 +25,28 @@ public class Pause : MonoBehaviour {
         }
     }
 
-    private void PauseGame() {
+    public void PauseGame() {
         Time.timeScale = 0;
         isPaused = true;
         pausePane.SetActive(isPaused);
     }
 
-    private void ContinueGame() {
+    public void ContinueGame() {
         Time.timeScale = 1;
         isPaused = false;
         pausePane.SetActive(isPaused);
+    }
+
+    public void RestartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ContinueGame();
+    }
+
+    public void MainMenu() {
+        Debug.Log("Menu ainda não implementado.");
+    }
+
+    public void Credits() {
+        Debug.Log("Créditos ainda não implementados.");
     }
 }

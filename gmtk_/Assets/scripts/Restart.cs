@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Restart : MonoBehaviour
-{
-
+public class Restart : MonoBehaviour { 
     private float time;
     public float holdTime = 2f;
 
@@ -15,8 +13,12 @@ public class Restart : MonoBehaviour
             time += Time.deltaTime;
             if (time >= holdTime) {
                 time = 0;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                RestartGame();
             }
         }
+    }
+
+    public void RestartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
