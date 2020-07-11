@@ -1135,8 +1135,11 @@ MonoBehaviour:
   _playerSpeed: 15
   _gravity: 1
   _jumpHeight: 25
+
   _countSomething: 0
---- !u!143 &1159880967
+
+  base_delay: 1
+  limit_delay: 2
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
