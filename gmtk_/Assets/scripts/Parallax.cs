@@ -1,27 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Parallax : MonoBehaviour
 {
-    public GameObject Camera;
-    public float parallaxEffectMultiplier = 1f;
 
-    private Transform cameraTransform;
-    private Vector3 lastCameraPosition;
+//  Parallax do Marco   : 
+ 
+    private float _length, _startPos;
+    public float parallaxEffect;
+    private GameObject _cam;
 
-    // Start is called before the first frame update
     void Start()
     {
-        cameraTransform = Camera.transform;
-        lastCameraPosition = cameraTransform.position;    
+        _startPos = transform.position.y;
+        _length = GetComponent<SpriteRenderer>().bounds.size.y;
+        _cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Vector3 deltaMoviment = cameraTransform.position - lastCameraPosition;
-        transform.position += deltaMoviment * parallaxEffectMultiplier;
-        lastCameraPosition = cameraTransform.position;
+        float temp = (_cam.transform.position.y * (1 - parallaxEffect));
+        float dist = (_cam.transform.position.y * parallaxEffect);
+
+        transform.position = new Vector3(transform.position.x, _startPos + dist, transform.position.z);
+
+        if (temp > _startPos + _length) _startPos += _length;
+        else if (temp < _startPos - _length) _startPos -= _length;
     }
 }
