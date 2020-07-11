@@ -601,6 +601,7 @@ MonoBehaviour:
   _playerSpeed: 15
   _gravity: 1
   _jumpHeight: 25
+  _countSomething: 0
 --- !u!143 &1159880967
 CharacterController:
   m_ObjectHideFlags: 0
@@ -938,7 +939,7 @@ PrefabInstance:
     - target: {fileID: 6003784319819903829, guid: 1dfa6c4448456c5409c475f068e15734,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.34
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 6003784319819903829, guid: 1dfa6c4448456c5409c475f068e15734,
         type: 3}
@@ -993,7 +994,7 @@ PrefabInstance:
     - target: {fileID: 6003784319819903829, guid: 1dfa6c4448456c5409c475f068e15734,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6003784319819903829, guid: 1dfa6c4448456c5409c475f068e15734,
         type: 3}
