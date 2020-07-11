@@ -121,6 +121,654 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &321036389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321036390}
+  - component: {fileID: 321036392}
+  - component: {fileID: 321036391}
+  - component: {fileID: 321036393}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &321036390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321036389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 470019498}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.5, y: -8.5}
+  m_SizeDelta: {x: 500, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &321036391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321036389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &321036392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321036389}
+  m_CullTransparentMesh: 0
+--- !u!223 &321036393
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321036389}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &470019494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470019498}
+  - component: {fileID: 470019497}
+  - component: {fileID: 470019496}
+  - component: {fileID: 470019495}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &470019495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470019494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &470019496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470019494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &470019497
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470019494}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &470019498
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470019494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1049239884}
+  - {fileID: 321036390}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &713242183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713242184}
+  - component: {fileID: 713242186}
+  - component: {fileID: 713242185}
+  - component: {fileID: 713242187}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &713242184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713242183}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1049239884}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -112, y: -1472}
+  m_SizeDelta: {x: 419.3316, y: 2880.9316}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &713242185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713242183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8867924, g: 0.1966002, b: 0.49343506, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "N\xE3o tinha medo o tal Jo\xE3o de Santo Cristo\r\nEra o que todos diziam
+    quando ele se perdeu\r\nDeixou pra tr\xE1s todo o marasmo da fazenda\r\nS\xF3
+    pra sentir no seu sangue o \xF3dio que Jesus lhe deu\r\nQuando crian\xE7a s\xF3
+    pensava em ser bandido\r\nAinda mais quando com um tiro de soldado o pai morreu\r\nEra
+    o terror da sertania onde morava\r\nE na escola at\xE9 o professor com ele aprendeu\r\nIa
+    pra igreja s\xF3 pra roubar o dinheiro\r\nQue as velhinhas colocavam na caixinha
+    do altar\r\nSentia mesmo que era mesmo diferente\r\nSentia que aquilo ali n\xE3o
+    era o seu lugar\r\nEle queria sair para ver o mar\r\nE as coisas que ele via
+    na televis\xE3o\r\nJuntou dinheiro para poder viajar\r\nDe escolha pr\xF3pria,
+    escolheu a solid\xE3o\r\nComia todas as menininhas da cidade\r\nDe tanto brincar
+    de m\xE9dico, aos doze era professor\r\nAos quinze, foi mandado pro o reformat\xF3rio\r\nOnde
+    aumentou seu \xF3dio diante de tanto terror\r\nN\xE3o entendia como a vida funcionava\r\nDiscrimina\xE7\xE3o
+    por causa da sua classe e sua cor\r\nFicou cansado de tentar achar resposta\r\nE
+    comprou uma passagem, foi direto a Salvador\r\nE l\xE1 chegando foi tomar um
+    cafezinho\r\nE encontrou um boiadeiro com quem foi falar\r\nE o boiadeiro tinha
+    uma passagem e ia perder a viagem\r\nMas Jo\xE3o foi lhe salvar\r\nDizia ele
+    \"estou indo pra Bras\xEDlia\r\nNeste pa\xEDs lugar melhor n\xE3o h\xE1\r\n'T\xF4
+    precisando visitar a minha filha\r\nEu fico aqui e voc\xEA vai no meu lugar\"\r\nE
+    Jo\xE3o aceitou sua proposta\r\nE num \xF4nibus entrou no Planalto Central\r\nEle
+    ficou bestificado com a cidade\r\nSaindo da rodovi\xE1ria, viu as luzes de Natal\r\nMeu
+    Deus, mas que cidade linda\r\nNo Ano Novo eu come\xE7o a trabalhar\r\nCortar
+    madeira, aprendiz de carpinteiro\r\nGanhava cem mil por m\xEAs em Taguatinga\r\nNa
+    sexta-feira ia pra zona da cidade\r\nGastar todo o seu dinheiro de rapaz trabalhador\r\nE
+    conhecia muita gente interessante\r\nAt\xE9 um neto bastardo do seu bisav\xF4\r\nUm
+    peruano que vivia na Bol\xEDvia\r\nE muitas coisas trazia de l\xE1\r\nSeu nome
+    era Pablo e ele dizia\r\nQue um neg\xF3cio ele ia come\xE7ar\r\nE o Santo Cristo
+    at\xE9 a morte trabalhava\r\nMas o dinheiro n\xE3o dava pra ele se alimentar\r\nE
+    ouvia \xE0s sete horas o notici\xE1rio\r\nQue sempre dizia que o seu ministro
+    ia ajudar\r\nMas ele n\xE3o queria mais conversa\r\nE decidiu que, como Pablo,
+    ele ia se virar\r\nElaborou mais uma vez seu plano santo\r\nE sem ser crucificado,
+    a planta\xE7\xE3o foi come\xE7ar\r\nLogo logo os maluco da cidade souberam da
+    novidade\r\n\"Tem bagulho bom ai!\"\r\nE Jo\xE3o de Santo Cristo ficou rico\r\nE
+    acabou com todos os traficantes dali\r\nFez amigos, frequentava a Asa Norte\r\nE
+    ia pra festa de rock, pra se libertar\r\nMas de repente Sob uma m\xE1 influ\xEAncia
+    dos boyzinho da cidade\r\nCome\xE7ou a roubar\r\nJ\xE1 no primeiro roubo ele
+    dan\xE7ou\r\nE pro inferno ele foi pela primeira vez\r\nViol\xEAncia e estupro
+    do seu corpo\r\nVoc\xEAs v\xE3o ver, eu vou pegar voc\xEAs\r\nAgora o Santo Cristo
+    era bandido\r\nDestemido e temido no Distrito Federal\r\nN\xE3o tinha nenhum
+    medo de pol\xEDcia\r\nCapit\xE3o ou traficante, playboy ou general\r\nFoi quando
+    conheceu uma menina\r\nE de todos os seus pecados ele se arrependeu\r\nMaria
+    L\xFAcia era uma menina linda\r\nE o cora\xE7\xE3o dele pra ela o Santo Cristo
+    prometeu\r\nEle dizia que queria se casar\r\nE carpinteiro ele voltou a ser\r\nMaria
+    L\xFAcia pra sempre vou te amar\r\nE um filho com voc\xEA eu quero ter\r\nO tempo
+    passa e um dia vem na porta\r\nUm senhor de alta classe com dinheiro na m\xE3o\r\nE
+    ele faz uma proposta indecorosa\r\nE diz que espera uma resposta, uma resposta
+    do Jo\xE3o\r\nN\xE3o boto bomba em banca de jornal\r\nNem em col\xE9gio de crian\xE7a
+    isso eu n\xE3o fa\xE7o n\xE3o\r\nE n\xE3o protejo general de dez estrelas\r\nQue
+    fica atr\xE1s da mesa com o cu na m\xE3o\r\nE \xE9 melhor senhor sair da minha
+    casa\r\nNunca brinque com um Peixes de ascendente Escorpi\xE3o\"\r\nMas antes
+    de sair, com \xF3dio no olhar, o velho disse\r\n\"Voc\xEA perdeu sua vida, meu
+    irm\xE3o\"\r\n\"Voc\xEA perdeu a sua vida meu irm\xE3o\r\nVoc\xEA perdeu a sua
+    vida meu irm\xE3o\r\nEssas palavras v\xE3o entrar no cora\xE7\xE3o\r\nEu vou
+    sofrer as consequ\xEAncias como um c\xE3o\"\r\nN\xE3o \xE9 que o Santo Cristo
+    estava certo\r\nSeu futuro era incerto e ele n\xE3o foi trabalhar\r\nSe embebedou
+    e no meio da bebedeira\r\nDescobriu que tinha outro trabalhando em seu lugar\r\nFalou
+    com Pablo que queria um parceiro\r\nE tamb\xE9m tinha dinheiro e queria se armar\r\nPablo
+    trazia o contrabando da Bol\xEDvia\r\nE Santo Cristo revendia em Planaltina\r\nMas
+    acontece que um tal de Jeremias\r\nTraficante de renome, apareceu por l\xE1\r\nFicou
+    sabendo dos planos de Santo Cristo\r\nE decidiu que, com Jo\xE3o ele ia acabar\r\nMas
+    Pablo trouxe uma Winchester-22\r\nE Santo Cristo j\xE1 sabia atirar\r\nE decidiu
+    usar a arma s\xF3 depois\r\nQue Jeremias come\xE7asse a brigar\r\nJeremias, maconheiro
+    sem-vergonha\r\nOrganizou a Rockonha e fez todo mundo dan\xE7ar\r\nDesvirginava
+    mocinhas inocentes\r\nSe dizia que era crente mas n\xE3o sabia rezar\r\nE Santo
+    Cristo h\xE1 muito n\xE3o ia pra casa\r\nE a saudade come\xE7ou a apertar\r\nEu
+    vou me embora, eu vou ver Maria L\xFAcia\r\nJ\xE1 't\xE1 em tempo de a gente
+    se casar\r\nChegando em casa ent\xE3o ele chorou\r\nE pro inferno ele foi pela
+    segunda vez\r\nCom Maria L\xFAcia Jeremias se casou\r\nE um filho nela ele fez\r\nSanto
+    Cristo era s\xF3 \xF3dio por dentro\r\nE ent\xE3o o Jeremias pra um duelo ele
+    chamou\r\nAmanh\xE3 \xE0s duas horas na Ceil\xE2ndia\r\nEm frente ao Lote 14,
+    \xE9 pra l\xE1 que eu vou\r\nE voc\xEA pode escolher as suas armas\r\nQue eu
+    acabo mesmo com voc\xEA, seu porco traidor\r\nE mato tamb\xE9m Maria L\xFAcia\r\nAquela
+    menina bosal pra quem jurei o meu amor\r\nE o Santo Cristo n\xE3o sabia o que
+    fazer\r\nQuando viu o rep\xF3rter da televis\xE3o\r\nQue deu not\xEDcia do duelo
+    na TV\r\nDizendo a hora e o local e a raz\xE3o\r\nNo s\xE1bado ent\xE3o, \xE0s
+    duas horas\r\nTodo o povo sem demora foi l\xE1 s\xF3 para assistir\r\nUm homem
+    que atirava pelas costas\r\nE acertou o Santo Cristo, come\xE7ou a sorrir\r\nSentindo
+    o sangue na garganta\r\nJo\xE3o olhou pras bandeirinhas e pro povo a aplaudir\r\nE
+    olhou pro sorveteiro e pras c\xE2meras e\r\nA gente da TV que filmava tudo ali\r\nE
+    se lembrou de quando era uma crian\xE7a\r\nE de tudo o que vivera at\xE9 ali\r\nE
+    decidiu entrar de vez naquela dan\xE7a\r\nSe a via-crucis virou circo, estou
+    aqui\r\nE nisso o sol cegou seus olhos\r\nE ent\xE3o Maria L\xFAcia ele reconheceu\r\nEla
+    trazia a Winchester-22\r\nA arma que seu primo Pablo lhe deu\r\nJeremias, eu
+    sou homem. coisa que voc\xEA n\xE3o \xE9\r\nE n\xE3o atiro pelas costas n\xE3o\r\nOlha
+    pra c\xE1 filha da puta, sem-vergonha\r\nD\xE1 uma olhada no meu sangue e vem
+    sentir o teu perd\xE3o\r\nE Santo Cristo com a Winchester-22\r\nDeu cinco tiros
+    no bandido traidor\r\nMaria L\xFAcia se arrependeu depois\r\nE morreu junto com
+    Jo\xE3o, seu protetor\r\nE o povo declarava que Jo\xE3o de Santo Cristo\r\nEra
+    santo porque sabia morrer\r\nE a alta burguesia da cidade\r\nN\xE3o acreditou
+    na hist\xF3ria que eles viram na TV\r\nE Jo\xE3o n\xE3o conseguiu o que queria\r\nQuando
+    veio pra Bras\xEDlia, com o diabo ter\r\nEle queria era falar pro presidente\r\nPra
+    ajudar toda essa gente que s\xF3 faz"
+--- !u!222 &713242186
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713242183}
+  m_CullTransparentMesh: 0
+--- !u!223 &713242187
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713242183}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &862357974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862357977}
+  - component: {fileID: 862357976}
+  - component: {fileID: 862357975}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862357975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862357974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &862357976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862357974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &862357977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862357974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1049239883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049239884}
+  - component: {fileID: 1049239885}
+  - component: {fileID: 1049239886}
+  m_Layer: 0
+  m_Name: Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1049239884
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049239883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 713242184}
+  m_Father: {fileID: 470019498}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 123.3006, y: -174.34468}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1049239885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049239883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5601ce1a1602e794bb8cb372be709ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 0.08
+--- !u!223 &1049239886
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049239883}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!1 &1486288496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486288498}
+  - component: {fileID: 1486288497}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1486288497
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486288496}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5fe3c10f0f2703245961ad721964712e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 54.549744
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1486288498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486288496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 264.61755, y: 194.5681, z: -1602.0664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912135279
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912135279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
