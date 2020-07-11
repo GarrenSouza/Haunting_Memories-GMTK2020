@@ -11,6 +11,16 @@ Disponível em https://store.unity.com/download
 Versão: 2.27.0
 
 Disponível em https://git-scm.com/downloads
+1. Escolha um editor de texto que você consiga usar
+2. Na janela seguinte escolha 'Git from the command line and also from 3rd-party software'
+3. Na próxima escolha 'Open SSH'
+4. Na próxima 'Use the Open SSL library'
+5. Na próxima 'Checkout Windows-style, commit Unix-style line endings'
+6. Na próxima 'Use MinTTY ...'
+7. Na próxima 'Default (fast-forward or merge)
+8. Na próxima marquem apenas 'Enable file system caching'
+9. Em 'experimental options' não marque nada
+10. CLique 'Install' e aguarde meu consagrado
 
 ## Como começar a desenvolver:
 No terminal, ir até o local aonde quer salvar o projeto e:
