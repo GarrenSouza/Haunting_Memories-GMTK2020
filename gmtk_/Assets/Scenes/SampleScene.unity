@@ -1111,8 +1111,8 @@ GameObject:
   - component: {fileID: 1159880969}
   - component: {fileID: 1159880968}
   - component: {fileID: 1159880966}
-  - component: {fileID: 1159880967}
   - component: {fileID: 1159880971}
+  - component: {fileID: 1159880967}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1136,6 +1136,8 @@ MonoBehaviour:
   _gravity: 1
   _jumpHeight: 25
   _countSomething: 0
+  base_delay: 1
+  limit_delay: 2
 --- !u!143 &1159880967
 CharacterController:
   m_ObjectHideFlags: 0

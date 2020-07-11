@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     public float _countSomething = 0;
 
+    public float base_delay;
+    public float limit_delay;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +52,7 @@ public class Player : MonoBehaviour
         if(_timer >= _tempoEsperado && _controller.isGrounded)
         {
             _yVelocity = _jumpHeight;               // pula
-            _tempoEsperado = Random.Range(1, 4);    // tempo para o próximo pulo
+            _tempoEsperado = Random.Range(base_delay, limit_delay);    // tempo para o próximo pulo
             _timer = 0;                             // reinicia o contador
         }
 
