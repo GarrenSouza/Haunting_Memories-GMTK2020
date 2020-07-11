@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
         
         if(_timer >= _tempoEsperado && _controller.isGrounded)
         {
+            SoundManager.instance.JumpSound();
             _yVelocity = _jumpHeight;               // pula
             _tempoEsperado = Random.Range(base_delay, limit_delay);    // tempo para o próximo pulo
             _timer = 0;                             // reinicia o contador
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Coletavel") {
+            SoundManager.instance.EnergySound();
             _countSomething++;
             Destroy(other.gameObject);
         }
