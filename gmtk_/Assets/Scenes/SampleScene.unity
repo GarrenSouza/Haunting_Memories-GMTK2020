@@ -601,6 +601,8 @@ MonoBehaviour:
   _playerSpeed: 15
   _gravity: 1
   _jumpHeight: 25
+  base_delay: 1
+  limit_delay: 2
 --- !u!143 &1159880967
 CharacterController:
   m_ObjectHideFlags: 0
