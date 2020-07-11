@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         _timer += Time.deltaTime;
 
         
-        if(_timer >= _tempoEsperado)
+        if(_timer >= _tempoEsperado && _controller.isGrounded)
         {
             _yVelocity = _jumpHeight;               // pula
             _tempoEsperado = Random.Range(1, 4);    // tempo para o próximo pulo
