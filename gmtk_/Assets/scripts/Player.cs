@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _gravity = 1.0f;
     [SerializeField]
-    private float _jumpHeight = 20.0f;
+    private float _jumpHeight = 15.0f;
     private float _yVelocity;
     private float _tempoEsperado = 3.0f;
     private float _timer = 0; 
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MovimentaUsGuri();       
     }
@@ -65,7 +65,17 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Coletavel") {
             _countSomething++;
+            _jumpHeight = _jumpHeight + 5f;
+            Destroy(other.gameObject);
+        }
+
+        if (other.tag == "coletavel2")
+        {
+            _countSomething++;
+            _jumpHeight = 15f;
             Destroy(other.gameObject);
         }
     }
+
+
 }
