@@ -9,6 +9,7 @@ Disponível em https://store.unity.com/download
 
 ### Git
 Versão: 2.27.0
+
 Disponível em https://git-scm.com/downloads
 
 ## Como começar a desenvolver:
@@ -31,6 +32,7 @@ git branch minhaAtividade
 git checkout minhaAtividade
 ```
 5. Mão na massa, só fazer o que tiver que fazer.
+
 Qualquer coisa chame o Garren.
 
 ## Como enviar seu trabalho para todo mundo:
