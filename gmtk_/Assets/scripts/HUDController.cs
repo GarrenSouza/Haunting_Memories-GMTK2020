@@ -1,24 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Camera : MonoBehaviour
+public class HUDController : MonoBehaviour
 {
+    public Text texto;
     private Transform playerTransform;
-
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
-    void LateUpdate() {
-        Vector3 temp = transform.position;
-        if (playerTransform.position.y > -12) {
-            temp.y = playerTransform.position.y;
-        }
-
-        transform.position = temp;  
+    void FixedUpdate() {
+        int altura = Mathf.RoundToInt(playerTransform.position.y) + 21;
+        texto.text = "Height: " + altura;
     }
 }

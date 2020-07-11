@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 293693464}
   - component: {fileID: 293693463}
   - component: {fileID: 293693462}
+  - component: {fileID: 293693465}
   m_Layer: 5
   m_Name: HeightText
   m_TagString: Untagged
@@ -385,6 +386,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293693460}
   m_CullTransparentMesh: 0
+--- !u!114 &293693465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293693460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080d0daa7b6bba546a92434fab8b42d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 293693463}
 --- !u!1001 &343735339
 PrefabInstance:
   m_ObjectHideFlags: 0
