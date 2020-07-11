@@ -20,7 +20,7 @@ Disponível em https://git-scm.com/downloads
 7. Na próxima 'Default (fast-forward or merge)
 8. Na próxima marquem apenas 'Enable file system caching'
 9. Em 'experimental options' não marque nada
-10. CLique 'Install' e aguarde meu consagrado
+10. Clique 'Install' e aguarde meu consagrado
 
 ## Como começar a desenvolver:
 No terminal, ir até o local aonde quer salvar o projeto e:
