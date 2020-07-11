@@ -13,8 +13,7 @@ public class Camera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
-    {
+    void LateUpdate() {
         Vector3 temp = transform.position;
         if (playerTransform.position.y > -12) {
             temp.y = playerTransform.position.y;
