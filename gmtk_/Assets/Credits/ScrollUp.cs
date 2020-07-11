@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScrollDown : MonoBehaviour
+public class ScrollUp : MonoBehaviour
 {
-    private float velocidade = 5;
+    public float velocidade = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,8 +13,10 @@ public class ScrollDown : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        Vector3 direction = transform.position;
+        direction.y += velocidade;
+        transform.position = direction;
     }
 }
