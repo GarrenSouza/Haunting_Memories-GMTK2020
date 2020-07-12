@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Coletavel
+  - ColetavelBom
+  - ColetavelRuim
+  - SpriteColetavel
+  - DescricaoColetavel
   layers:
   - Default
   - TransparentFX
