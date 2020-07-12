@@ -958,7 +958,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 150, y: 50}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107222561
 MonoBehaviour:
@@ -6187,7 +6187,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -6198,7 +6198,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resume
+  m_Text: (ESC) Resume
 --- !u!222 &774511364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6479,7 +6479,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 150, y: 50}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835246608
 MonoBehaviour:
@@ -6744,7 +6744,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -6755,7 +6755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: (C) Credits
 --- !u!222 &868488762
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9674,7 +9674,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 150, y: 50}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091274242
 MonoBehaviour:
@@ -10042,7 +10042,6 @@ GameObject:
   - component: {fileID: 1159880971}
   - component: {fileID: 1159880967}
   - component: {fileID: 1159880973}
-  - component: {fileID: 1159880972}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10163,19 +10162,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1159880972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159880965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a0f0576bf1bee4a81fa0a85c555090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdTime: 2
 --- !u!114 &1159880973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10188,8 +10174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdea6bba591afe34c9b7c66418c93eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePane: {fileID: 1607129276}
+  pausePane: {fileID: 1544230864}
   isPaused: 0
+  holdTime: 2
 --- !u!4 &1181744792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1976725697446049891, guid: 06aed9e3b2a14724bb3f0bee346de033,
@@ -11335,7 +11322,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -11346,7 +11333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: (M) Main Menu
 --- !u!222 &1288933212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15560,7 +15547,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -15571,7 +15558,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: (R) Restart
 --- !u!222 &1678464293
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@ public class Pause : MonoBehaviour {
 
     public GameObject pausePane;
     public bool isPaused = false;
+    private float time = 0f;
+    public float holdTime = 2f;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -21,6 +24,28 @@ public class Pause : MonoBehaviour {
             }
             else {
                 ContinueGame();
+            }
+        }
+        if (Input.GetKey(KeyCode.R)) {
+            if (pausePane.activeInHierarchy) {
+                RestartGame();
+            }
+            else {
+                time += Time.deltaTime;
+                if (time >= holdTime) {
+                    time = 0;
+                    RestartGame();
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.M)) {
+            if (pausePane.activeInHierarchy) {
+                MainMenu();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.C)) {
+            if (pausePane.activeInHierarchy) {
+                Credits();
             }
         }
     }
@@ -44,9 +69,11 @@ public class Pause : MonoBehaviour {
 
     public void MainMenu() {
         Debug.Log("Menu ainda não implementado.");
+        ContinueGame();
     }
 
     public void Credits() {
         SceneManager.LoadScene("Credits", LoadSceneMode.Single);
+        ContinueGame();
     }
 }
