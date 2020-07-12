@@ -14,7 +14,7 @@ public class Pause : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void FixedUpdate() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             if (!pausePane.activeInHierarchy) {
                 PauseGame();
@@ -47,6 +47,6 @@ public class Pause : MonoBehaviour {
     }
 
     public void Credits() {
-        Debug.Log("Créditos ainda não implementados.");
+        SceneManager.LoadScene("Credits", LoadSceneMode.Single);
     }
 }
