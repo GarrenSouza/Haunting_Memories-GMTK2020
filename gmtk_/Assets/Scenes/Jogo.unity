@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1159880973}
         m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
@@ -6524,7 +6524,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1159880973}
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -9719,7 +9719,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1159880973}
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
@@ -9729,7 +9729,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: MainMenuFunction
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1091274243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17977,7 +17977,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1159880973}
         m_MethodName: Credits
         m_Mode: 1
         m_Arguments:
@@ -17987,7 +17987,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: CreditsFunction
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1927806786
 MonoBehaviour:
   m_ObjectHideFlags: 0
