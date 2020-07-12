@@ -7,6 +7,8 @@ TagManager:
   - Coletavel
   - coletavel2
   - coletavel 2
+  - light
+  - ganhou_tag
   layers:
   - Default
   - TransparentFX

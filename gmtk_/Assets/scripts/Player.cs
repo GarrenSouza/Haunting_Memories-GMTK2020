@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Player : MonoBehaviour
     private float _timer = 0; 
     private CharacterController _controller;
 
+    private GameObject[] _light;
+    private float timerdaluz = 0.3f;
+
     public float _countSomething = 0;
 
     public float base_delay;
@@ -23,6 +27,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        _light = GameObject.FindGameObjectsWithTag("light");
+
         _controller = GetComponent<CharacterController>();
         if (!_controller)
             Debug.LogError("Controller is null!");
@@ -31,7 +38,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        MovimentaUsGuri();       
+        MovimentaUsGuri();
+
+        if (timerdaluz < 0.2f)
+        {
+            _light[0].GetComponent<Light>().intensity = 16 - 80*timerdaluz;
+            timerdaluz += Time.deltaTime;
+        }
     }
 
     void MovimentaUsGuri()
@@ -67,6 +80,9 @@ public class Player : MonoBehaviour
             _countSomething++;
             _jumpHeight = _jumpHeight + 5f;
             Destroy(other.gameObject);
+
+            _light[0].GetComponent<Light>().intensity = 16f;
+            timerdaluz = 0;
         }
 
         if (other.tag == "coletavel2")
@@ -75,7 +91,15 @@ public class Player : MonoBehaviour
             _jumpHeight = 15f;
             Destroy(other.gameObject);
         }
+
+        if (other.tag == "ganhou_tag")
+        {
+            SceneManager.LoadScene("Credits");
+        }
+
     }
+
+
 
 
 }

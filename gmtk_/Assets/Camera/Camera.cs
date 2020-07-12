@@ -16,7 +16,7 @@ public class Camera : MonoBehaviour
     void LateUpdate()
     {
         Vector3 temp = transform.position;
-        if (playerTransform.position.y > -12) {
+        if (playerTransform.position.y > -14f) {
             temp.y = playerTransform.position.y;
         }
 
