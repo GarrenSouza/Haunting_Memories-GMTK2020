@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,11 +8,14 @@ public class Player : MonoBehaviour
     private float _playerSpeed = 5f;
     [SerializeField]
     private float _gravity = 1.0f;
-    public float _jumpHeight = 20.0f;
+    [SerializeField]
+    private float _jumpHeight = 20.0f;
     private float _yVelocity;
     private float _tempoEsperado = 3.0f;
     private float _timer = 0; 
     private CharacterController _controller;
+
+    public float _countSomething = 0;
 
     public float base_delay;
     public float limit_delay;
@@ -36,6 +38,12 @@ public class Player : MonoBehaviour
     {
         // movimento horizontal :
         float HorizontalInput = Input.GetAxis("Horizontal");
+        if (HorizontalInput < 0) {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        }
+        else if(HorizontalInput > 0) {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
+        }
         Vector3 direction = new Vector3(HorizontalInput, 0, 0);     
         Vector3 movement = direction * _playerSpeed;
 
@@ -61,21 +69,11 @@ public class Player : MonoBehaviour
         _controller.Move(movement * Time.deltaTime);        
     }
 
-    void OnTriggerEnter(Collider other) {
-        string descricao = "";
-        if(other.tag == "ColetavelBom") {
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Coletavel") {
             SoundManager.instance.EnergySound();
-            _jumpHeight += 5;
+            _countSomething++;
             Destroy(other.gameObject);
-            descricao = "+5 Jump Power";
         }
-        if (other.tag == "ColetavelRuim") {
-            SoundManager.instance.EnergySound();
-            _jumpHeight -= 5;
-            Destroy(other.gameObject);
-            descricao = "-5 Jump Power";
-        }
-        GameObject.FindGameObjectWithTag("SpriteColetavel").GetComponent<Image>().sprite = other.GetComponent<SpriteRenderer>().sprite;
-        GameObject.FindGameObjectWithTag("DescricaoColetavel").GetComponent<Text>().text = descricao;
     }
 }
