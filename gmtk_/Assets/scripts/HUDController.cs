@@ -16,10 +16,10 @@ public class HUDController : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         if (texto.text.Contains("Jump Power:")) {
-            texto.text = "Jump Power:" + Mathf.RoundToInt(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>()._jumpHeight);
+            texto.text = "Jump Power: " + Mathf.RoundToInt(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>()._jumpHeight);
         }
         else if (texto.text.Contains("Height:")) {
-            int altura = Mathf.RoundToInt(playerTransform.position.y) + 21;
+            int altura = Mathf.RoundToInt(playerTransform.position.y) + 18;
             texto.text = "Height: " + altura;
         }
         

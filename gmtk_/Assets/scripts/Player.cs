@@ -8,8 +8,9 @@ public class Player : MonoBehaviour {
     private float _playerSpeed = 5f;
     [SerializeField]
     private float _gravity = 1.0f;
+    public float _jumpHeight = 15.0f;
     [SerializeField]
-    public float _jumpHeight = 20.0f;
+    private float _jumpHeightOriginal = 15.0f;
     private float _yVelocity;
     private float _tempoEsperado = 3.0f;
     private float _timer = 0;
@@ -26,7 +27,7 @@ public class Player : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void FixedUpdate() {
         MovimentaUsGuri();
     }
 
@@ -65,20 +66,25 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         string descricao = "";
-        if (other.tag == "ColetavelBom") {
+        if (other.tag == "Coletavel") {
             SoundManager.instance.EnergySound();
             _jumpHeight += 5f;
             descricao = "+5 Jump Power";
             Destroy(other.gameObject);
         }
-        if (other.tag == "ColetavelRuim") {
+        if (other.tag == "coletavel2") {
             SoundManager.instance.EnergySound();
-            _jumpHeight -= 5f;
-            descricao = "-5 Jump Power";
+            _jumpHeight = _jumpHeightOriginal;
+            descricao = "Jump Power Reset";
+            Destroy(other.gameObject);
+        }
+        if (other.tag == "ganhou_tag") {
+            new Pause().Credits();
+            descricao = "You win";
             Destroy(other.gameObject);
         }
 
         GameObject.FindGameObjectWithTag("DescricaoColetavel").GetComponent<Text>().text = descricao;
-        GameObject.FindGameObjectWithTag("SpriteColetavel").GetComponent<Image>().sprite = other.GetComponent<SpriteRenderer>().sprite;
+        GameObject.FindGameObjectWithTag("SpriteColetavel").GetComponent<Image>().sprite = other.GetComponentInChildren<SpriteRenderer>().sprite;
     }
 }
