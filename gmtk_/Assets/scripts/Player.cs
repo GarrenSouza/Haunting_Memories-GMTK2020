@@ -36,6 +36,12 @@ public class Player : MonoBehaviour
     {
         // movimento horizontal :
         float HorizontalInput = Input.GetAxis("Horizontal");
+        if (HorizontalInput < 0) {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        }
+        else if(HorizontalInput > 0) {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
+        }
         Vector3 direction = new Vector3(HorizontalInput, 0, 0);     
         Vector3 movement = direction * _playerSpeed;
 
