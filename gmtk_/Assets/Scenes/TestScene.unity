@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3400cc20f988963478f3cd61cf804e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundFX: {fileID: 896579240}
+  soundFX: {fileID: 896579241}
   jumpClip: {fileID: 8300000, guid: ac23daa9b648d23408a550335dd5621a, type: 3}
   energyClip: {fileID: 8300000, guid: b95fc809ed2ca944d96fcb84764ae10c, type: 3}
 --- !u!4 &896579243
