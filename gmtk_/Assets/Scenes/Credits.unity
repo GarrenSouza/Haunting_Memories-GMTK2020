@@ -372,8 +372,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 055c34cb51f98654ab46fff97a17d15d, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -384,9 +384,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Team:\n\tGarren\n\tA. H. Junior\n\tR. H. Petry\n\tPaula C. Werner\n\tSam
-    Cora Isatto\n\tGabriel%20M\xFCller\n\tBruno C. Almeida\n\tPedro L. Mondadori\n\tMarco
-    A. Chitolina"
+  m_Text: "Programmers:\n\n\tGarren\n\tA. H. Junior\n\tR. H. Petry\n\tGabriel%20M\xFCller\n\tBruno
+    C. Almeida\n\tPedro L. Mondadori\n\tMarco A. Chitolina\n\nArtists:\n\n\tPaula
+    C. Werner\n\tSam Cora Isatto\n\nMusic:\n\n\tA. H. Junior"
 --- !u!222 &713242186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -482,6 +482,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1026457510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5501730135744045470, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075076, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 651.9791
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 230.24374
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -160.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501730135859075078, guid: f92535b24a54d7c4f92a4dca0cf1d9e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f92535b24a54d7c4f92a4dca0cf1d9e6, type: 3}
 --- !u!1 &1049239883
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,8 +606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5601ce1a1602e794bb8cb372be709ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 0.08
+  velocidade: 1
   maxY: 0
+  timer: 0
+  Fader: {fileID: 0}
 --- !u!223 &1049239886
 Canvas:
   m_ObjectHideFlags: 0
@@ -579,10 +655,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486288496}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5fe3c10f0f2703245961ad721964712e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 28ae5178e30af3f4e84cc21faa401eb6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

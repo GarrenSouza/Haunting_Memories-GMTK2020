@@ -9,6 +9,9 @@ TagManager:
   - coletavel 2
   - light
   - ganhou_tag
+  - DescricaoColetavel
+  - SpriteColetavel
+  - Music
   layers:
   - Default
   - TransparentFX

@@ -8,11 +8,15 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField]
     private AudioSource soundFX;
+    [SerializeField]
+    private AudioSource soundFX2;
+
 
     [SerializeField]
     private AudioClip jumpClip;
     [SerializeField]
     private AudioClip energyClip;
+
 
 
     // Start is called before the first frame update
@@ -22,11 +26,14 @@ public class SoundManager : MonoBehaviour
             instance = this;
     }
 
+
+
+
     // Update is called once per frame
     public void JumpSound()
     {
-        soundFX.clip = jumpClip;
-        soundFX.Play();
+        soundFX2.clip = jumpClip;
+        soundFX2.Play();
     }
     public void EnergySound()
     {
