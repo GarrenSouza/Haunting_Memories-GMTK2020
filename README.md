@@ -1,9 +1,6 @@
 # Haunting Memories
 Check it here: https://itch.io/jam/gmtk-2020/rate/700519
 
-# gmtk_dos_guri
-É a jam e não tem jeito
-
 ## Programas necessários:
 ### Unity
 Versão: 2019.4.3f1
