@@ -67,16 +67,16 @@ git push origin minhaAtividade
 # Team
 
 ## Programmers:
-R. H. Petry
-Gabriel Müller
-M. A. Chitolina
-B. Corrêa de Almeida
-Garren
-A. H. Junior
+Garren, 
+R. H. Petry, 
+Gabriel Müller, 
+M. A. Chitolina, 
+B. Corrêa de Almeida, 
+A. H. Junior, 
 Pedro L. Mondadori
 
 ## Designers:
-Sam Cora Isatto
+Sam Cora Isatto, 
 Paula C. Werner
 
 ## Music:
