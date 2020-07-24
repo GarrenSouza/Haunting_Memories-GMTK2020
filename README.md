@@ -1,3 +1,6 @@
+# Haunting Memories
+Check it here: https://itch.io/jam/gmtk-2020/rate/700519
+
 # gmtk_dos_guri
 É a jam e não tem jeito
 
@@ -60,3 +63,21 @@ git commit -m "Eu fiz o boneco pular de raiva"
 git push origin minhaAtividade
 ```
 4. Mandar uma mensagem pro Garren dizendo que terminou sua atividade, comemorar e pegar outra.
+
+# Team
+
+## Programmers:
+R. H. Petry
+Gabriel Müller
+M. A. Chitolina
+B. Corrêa de Almeida
+Garren
+A. H. Junior
+Pedro L. Mondadori
+
+## Designers:
+Sam Cora Isatto
+Paula C. Werner
+
+## Music:
+A. H. Junior
